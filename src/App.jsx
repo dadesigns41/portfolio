@@ -1,5 +1,5 @@
-import Header from "./components/Header"
-import Skills from "./components/Skills"
+import Header from "./features/Header"
+import Skills from "./features/Skills"
 import "./App.css"
 
 export default function App() {
