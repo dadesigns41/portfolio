@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
     <section>
-      <h2>Skills</h2>
+      <h2>Skill Matrix</h2>
       <ul>
         <li>React</li>
         <li>Vite</li>
