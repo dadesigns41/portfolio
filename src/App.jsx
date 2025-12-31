@@ -1,14 +1,26 @@
-import Header from "./features/Header"
-import Intro from "./features/Intro"
-import Skills from "./features/Skills"
-import "./App.css"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-export default function App() {
+import Intro from "./Intro";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
+
+function App() {
   return (
-    <div>
+    <>
       <Header />
-      <Intro />
-      <Skills />
-    </div>
-  )
+
+      <main>
+        <Intro />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+
+      <Footer />
+    </>
+  );
 }
+
+export default App;

@@ -1,11 +1,12 @@
-import Logo from '../components/Logo';
-import NavLink from '../components/NavLink';
+import Logo from "../components/Logo";
+import NavLink from "../components/NavLink";
 
 function Header() {
   return (
-    <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px' }}>
+    <header className="header">
       <Logo />
-      <nav>
+
+      <nav className="nav">
         <NavLink href="#intro">Intro</NavLink>
         <NavLink href="#skills">Skills</NavLink>
         <NavLink href="#projects">Projects</NavLink>
