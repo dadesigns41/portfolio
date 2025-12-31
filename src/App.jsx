@@ -1,10 +1,11 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "./features/Header";
+import Footer from "./features/Footer";
 
-import Intro from "./Intro";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Intro from "./features/Intro";
+import Skills from "./features/Skills";
+import DevToolbelt from "./features/devToolbelt";
+import Projects from "./features/Projects";
+import Contact from "./features/Contact";
 
 function App() {
   return (
@@ -12,11 +13,9 @@ function App() {
       <Header />
 
       <main>
-        <Intro />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
+  <h1>Hello World</h1>
+</main>
+
 
       <Footer />
     </>

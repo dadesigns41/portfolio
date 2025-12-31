@@ -1,14 +1,17 @@
-export default function Skills() {
+import SectionHeader from "../components/SectionHeader";
+
+function Skills() {
   return (
-    <section>
-      <h2>Skill Matrix</h2>
+    <section id="skills">
+      <SectionHeader title="Skills" subtitle="Technologies and concepts I’m learning" />
       <ul>
-        <li>React</li>
-        <li>Vite</li>
+        <li>HTML & CSS</li>
         <li>JavaScript</li>
-        <li>Git</li>
-        <li>Docker</li>
+        <li>React</li>
+        <li>Git & GitHub</li>
       </ul>
     </section>
-  )
+  );
 }
+
+export default Skills;

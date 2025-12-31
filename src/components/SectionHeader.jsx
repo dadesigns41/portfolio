@@ -1,0 +1,10 @@
+function SectionHeader({ title, subtitle }) {
+  return (
+    <main>
+  <h1>Hello World</h1>
+</main>
+
+  );
+}
+
+export default SectionHeader;
