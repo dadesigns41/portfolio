@@ -1,9 +1,9 @@
 function SectionHeader({ title, subtitle }) {
   return (
-    <main>
-  <h1>Hello World</h1>
-</main>
-
+    <header>
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+    </header>
   );
 }
 
