@@ -1,11 +1,6 @@
-import Header from "./features/Header";
-import Footer from "./features/Footer";
+// src/App.jsx
 
-import Intro from "./features/Intro";
-import Skills from "./features/Skills";
-import DevToolbelt from "./features/DevToolbelt";
-import Projects from "./features/Projects";
-import Contact from "./features/Contact";
+import { Header, Footer, DevToolbelt, Intro, Skills, Projects, Contact } from './features';
 
 function App() {
   return (
