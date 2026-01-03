@@ -1,9 +1,10 @@
+import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import DevToolIcon from "../components/DevToolIcon";
 
 function DevToolbelt() {
   return (
-    <section id="devtoolbelt" className="dev-toolbelt">
+    <Section id="devtoolbelt" className="dev-toolbelt">
       <SectionHeader
         title="Dev Toolbelt"
         subtitle="Tools I use for development"
@@ -15,7 +16,7 @@ function DevToolbelt() {
         <DevToolIcon icon="🌱" label="Git" />
         <DevToolIcon icon="🔍" label="Chrome DevTools" />
       </ul>
-    </section>
+    </Section>
   );
 }
 

@@ -1,8 +1,8 @@
 function SectionHeader({ title, subtitle }) {
   return (
-    <header>
+    <header className="section-header">
       <h2>{title}</h2>
-      <p>{subtitle}</p>
+      {subtitle && <p>{subtitle}</p>}
     </header>
   );
 }
