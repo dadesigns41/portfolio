@@ -62,6 +62,76 @@ src/
 - Consider integrating **analytics and feedback tracking**.
 - Document the **workflow for future developers or my own reference**.
 
+## 8. Architectural Refinements
+As the project matured, I focused on **cleaning up imports and solidifying boundaries** between files.
+
+- Introduced **barrel files (`index.js`)** to centralize exports and reduce noisy relative imports.
+- Refactored `App.jsx` to act purely as a **composition layer**, assembling features instead of containing logic.
+- Clarified that:
+  - **Components** are generic UI building blocks.
+  - **Features** own layout and section-level composition.
+- Ensured no feature directly depends on another feature—only shared components.
+
+This made the project easier to reason about and scale.
+
+## 9. Rendering & Entry Point Cleanup
+- Fixed initial **rendering issues** between `main.jsx` and `App.jsx`.
+- Properly wrapped the app in **`StrictMode`** to surface potential issues early.
+- Verified that the app renders consistently across refreshes and environments.
+- Tagged a stable milestone (`v0.1`) once all sections rendered correctly.
+
+This step helped lock in a **known-good baseline** before continuing development.
+
+## 10. Git Workflow & Discipline
+I treated this redesign as a real-world project, not a sandbox.
+
+- Used **incremental commits** to reflect meaningful changes:
+  - structural refactors
+  - rendering fixes
+  - component migrations
+- Practiced writing **clear commit messages** that explain *why* a change was made.
+- Leveraged tags to mark stable checkpoints instead of guessing later.
+
+This reinforced good habits around **traceability and rollback safety**.
+
+## 11. React Fundamentals Reinforced
+While building, I intentionally slowed down to solidify core React concepts:
+
+- Gained clarity on:
+  - **props** as component-defined inputs (not predefined magic)
+  - component reusability through props
+  - how JSX maps to function calls
+- Began demystifying **hooks** by understanding *why* they exist before using them.
+- Learned how data flows **top-down**, reducing confusion around state and re-renders.
+
+This groundwork made later features feel *earned*, not copied.
+
+## 12. Responsive & Cross-Device Awareness
+- Identified layout inconsistencies between macOS and Windows displays.
+- Recognized how:
+  - viewport sizing
+  - font rendering
+  - flex/grid behavior  
+  can differ across environments.
+- Flagged responsive behavior as an area for focused iteration rather than quick fixes.
+
+## 13. Current State of the Project
+At this point, the portfolio:
+
+- Renders all major sections correctly.
+- Has a **clear, scalable folder structure**.
+- Uses clean imports and predictable composition.
+- Is backed by real Git history, not experimental throwaways.
+- Serves as both:
+  - a **public-facing portfolio**
+  - a **learning artifact** documenting architectural growth.
+
+---
+
+### Closing Note
+This project marks the transition from *“learning React syntax”* to *“thinking like a frontend engineer.”*  
+The emphasis shifted from just making things work to making them **understandable, maintainable, and evolvable**.
+
 ---
 
 *This file serves as a snapshot of my thought process and technical journey in redesigning my portfolio from CRA to a modern, modular Vite application.*

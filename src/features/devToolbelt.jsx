@@ -1,14 +1,19 @@
 import SectionHeader from "../components/SectionHeader";
+import DevToolIcon from "../components/DevToolIcon";
 
 function DevToolbelt() {
   return (
-    <section id="devtoolbelt">
-      <SectionHeader title="Dev Toolbelt" subtitle="Tools I use for development" />
-      <ul>
-        <li>VSCode</li>
-        <li>Vite</li>
-        <li>Git</li>
-        <li>Chrome DevTools</li>
+    <section id="devtoolbelt" className="dev-toolbelt">
+      <SectionHeader
+        title="Dev Toolbelt"
+        subtitle="Tools I use for development"
+      />
+
+      <ul className="toolbelt-icons">
+        <DevToolIcon icon="📝" label="VSCode" />
+        <DevToolIcon icon="⚡" label="Vite" />
+        <DevToolIcon icon="🌱" label="Git" />
+        <DevToolIcon icon="🔍" label="Chrome DevTools" />
       </ul>
     </section>
   );
