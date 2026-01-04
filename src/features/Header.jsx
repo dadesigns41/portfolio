@@ -10,6 +10,7 @@ function Header() {
         <NavLink href="#intro">Intro</NavLink>
         <NavLink href="#skills">Skills</NavLink>
         <NavLink href="#projects">Projects</NavLink>
+        <NavLink href="#dev-toolbelt">Dev Toolbelt</NavLink> {/* Added */}
         <NavLink href="#contact">Contact</NavLink>
       </nav>
     </header>
