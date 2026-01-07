@@ -4,7 +4,7 @@ import DevToolIcon from "../components/DevToolIcon";
 
 function DevToolbelt() {
   return (
-    <Section id="devtool-belt" className="dev-toolbelt">
+    <Section id="dev-toolbelt" className="dev-toolbelt">
       <SectionHeader
         title="Dev Toolbelt"
         subtitle="Tools I use for development"
