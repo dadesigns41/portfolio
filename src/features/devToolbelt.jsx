@@ -17,6 +17,7 @@ function DevToolbelt() {
         <DevToolIcon icon="🔍" label="Chrome DevTools" />
         <DevToolIcon icon="🐳" label="Docker" />
         <DevToolIcon icon="☁️" label="AWS" />
+        <DevToolIcon icon="🧪" label="Jest" />
       </ul>
     </Section>
   );
